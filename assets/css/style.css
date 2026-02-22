@@ -78,6 +78,76 @@ h3,
   transform: translateY(-8px);
   box-shadow: 0 15px 35px -12px var(--accent-glow);
 }
+/* navbar */
+
+/* =========================
+   Navbar Styling (Match Theme)
+========================= */
+
+.glass-navbar {
+  background: rgba(5, 10, 20, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar-brand {
+  font-family: "Fira Code", monospace;
+  color: var(--accent) !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: var(--text-main) !important;
+  font-size: 0.85rem;
+  transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--accent) !important;
+}
+
+/* =========================
+   Custom Toggle Button
+========================= */
+
+.navbar-toggler {
+  background: var(--accent);
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* =========================
+   Mobile Fix
+========================= */
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: var(--bg-card);
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 15px;
+    border: 1px solid var(--border);
+  }
+
+  .navbar-nav {
+    gap: 15px;
+  }
+
+  .nav-link {
+    padding: 8px 0;
+  }
+}
 
 /* --- Hero Section (Image 4) --- */
 .hero-section {
